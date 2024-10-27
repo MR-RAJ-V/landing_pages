@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+.main{
+    width:100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width:40%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.right{
+    height:100%;
+    width:60%;
+    background-color: white;
+    border:4px solid black;
+    border-radius: 10px;
+}
+.rtop{
+    height:50%;
+    width:100%;
+    background-color: red;
+    display:flex
+}
+.rbottom{
+    height:50%;
+    width:100%;
+    background-image:url("img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+.r-left{
+    height:100%;
+    width:50%;
+    background-image:url("img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+.r-right{
+    height:100%;
+    width:50%;
+    background-image:url("img3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+.r-bottom{
+    height: 10%;
+    width: 15%;
+    background-color:aliceblue;
+    position: absolute;
+    bottom: 0px;
+    border-left:4px solid white;
+    border-top:4px solid black;
+    border-right:4px solid black;
+    border-radius: 10px;
+    z-index: 1;
+    left:39%;
+
+}
+
+.lnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    font-size: 20px;
+
+
+}
+.lnavr a{
+    text-decoration: none;
+    padding-left: 20px;
+
+}
+
+.lnav i{
+  font-size: 30px;
+  padding-left: 20px;
+  color:blue;
+
+}
+
+.lnavr{
+    display:flex;
+    justify-content: center;
+}
+.textcenter{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+.textcenter p{
+    font-size: 12px;
+    opacity: .6;
+    line-height: 25px;
+    margin: 20px 0 ;
+}
+.textcenter a{
+    color:black;
+    border-bottom:1px solid black;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+
+}
+@media (max-width:500px){
+    .main{
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .left .textcenter{
+        margin: 40px 0 30px;
+        
+    }
+
+    .left,.right{
+        width:100%;
+        height:50%;
+        justify-content: space-between;
+    }
+    
+}
